@@ -5,6 +5,13 @@ api_platform:
         html: [ 'text/html' ]
         jsonhal: [ 'application/hal+json' ]
 
+    swagger:
+        api_keys:
+            # overridden in OpenApiFactoryDecorator
+            key:
+                name: Authorization
+                type: header
+
 when@prod:
     api_platform:
         formats:
