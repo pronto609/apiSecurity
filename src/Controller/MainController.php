@@ -12,7 +12,7 @@ use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 class MainController extends AbstractController
 {
     #[Route('/')]
-    public function homepage(NormalizerInterface $normalizer, #[CurrentUser] User $user): Response
+    public function homepage(NormalizerInterface $normalizer, #[CurrentUser] User $user = null): Response
     {
         return $this->render('main/homepage.html.twig',
         [
