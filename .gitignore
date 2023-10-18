@@ -1,4 +1,4 @@
-/.idae
+/.idea
 /.ide
 ###> symfony/framework-bundle ###
 /.env.local
