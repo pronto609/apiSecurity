@@ -41,13 +41,7 @@ class DragonTreasureResourceTest extends ApiTestCase
     {
         $user = UserFactory::createOne();
         $this->browser()
-//            ->post('/login', [
-//                'json' => [
-//                    'email' => $user->getEmail(),
-//                    'password' => 'pass'
-//                ]
-//            ])
-                ->actingAs($user)
+            ->actingAs($user)
             ->post('/api/treasures', [
                 'json' => []
             ])

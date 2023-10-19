@@ -132,7 +132,6 @@ class DragonTreasure
     #[Groups(['treasure:read', 'treasure:write'])]
     #[Assert\Valid]
     #[IsValidOwner]
-    #[Assert\NotNull]
     #[ApiFilter(SearchFilter::class, strategy: 'exact')]
     private ?User $owner = null;
 
