@@ -57,7 +57,7 @@ class DragonTreasureResourceTest extends ApiTestCase
                     'description' => 'Test description',
                     'value' => 1000,
                     'coolFactor' => 5,
-                    'owner' => '/api/users/'. $user->getId()
+//                    'owner' => '/api/users/'. $user->getId()
             ]))
             ->assertStatus(201)
             ->dump()
@@ -134,7 +134,7 @@ class DragonTreasureResourceTest extends ApiTestCase
                     'owner' => '/api/users/'.$user2->getId()
                 ]
             ])
-            ->assertStatus(403)
+            ->assertStatus(422)
             ;
 
     }
